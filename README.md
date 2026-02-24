@@ -20,20 +20,4 @@ A gazebo simulation of an indoor environment is used. Through this environment w
 
 ### Experimental map segmentation visualised
 
-#### Label colors for reference
-![label_colors](Code/color_labels.png "label colors")
-
-#### segmentation by choosing the most repeated label for a cell in occupancy grid
-![map_segmentation](Results/seg_map/seg_map_max_count.png "segmented occupancy grid")
-
-#### segmentation by multiplying the past probabilities for each label with new probabilities for the label in the same cell
-![map_segmentation](Results/seg_map/seg_map_bayesian_multiply_probs.png "segmented occupancy grid")
-
-#### segmentation by adding the label probabilities for the same cell and finding maximum probability after softmax in each cell of occupancy grid
-![map_segmentation](Results/seg_map/seg_map_add_probs.png "segmented occupancy grid")
-
-#### A slightly varied version of the addition technique
-![map_segmentation](Results/seg_map/seg_map_add_probs_new.png "segmented occupancy grid")
-
-#### Assigning label based on the polygon
-![map_segmentation](Results/seg_map/seg_map_polygon_label.png "segmented occupancy grid")
+![segmented_map](Results/seg_map/nyuv2_seg_map_polygon_label_wo_polygons.png "segmented_map")
